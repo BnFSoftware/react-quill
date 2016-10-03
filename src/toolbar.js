@@ -11,12 +11,13 @@ var defaultColors = [
 	'rgb(255, 235, 204)', 'rgb(255, 255, 204)', 'rgb(204, 232, 204)',
 	'rgb(204, 224, 245)', 'rgb(235, 214, 255)', 'rgb(187, 187, 187)',
 	'rgb(240, 102, 102)', 'rgb(255, 194, 102)', 'rgb(255, 255, 102)',
-	'rgb(102, 185, 102)', 'rgb(102, 163, 224)', 'rgb(194, 133, 255)',
-	'rgb(136, 136, 136)', 'rgb(161,   0,   0)', 'rgb(178, 107,   0)',
-	'rgb(178, 178,   0)', 'rgb(  0,  97,   0)', 'rgb(  0,  71, 178)',
-	'rgb(107,  36, 178)', 'rgb( 68,  68,  68)', 'rgb( 92,   0,   0)',
-	'rgb(102,  61,   0)', 'rgb(102, 102,   0)', 'rgb(  0,  55,   0)',
-	'rgb(  0,  41, 102)', 'rgb( 61,  20,  10)',
+	'rgb(102, 185, 102)', 'rgb(139, 198,  63)', 'rgb(102, 163, 224)',
+	'rgb(194, 133, 255)', 'rgb(136, 136, 136)', 'rgb(161,   0,   0)',
+	'rgb(178, 107,   0)', 'rgb(178, 178,   0)', 'rgb(  0,  97,   0)',
+	'rgb( 74, 126,  59)', 'rgb(  0,  71, 178)', 'rgb(107,  36, 178)',
+	'rgb( 68,  68,  68)', 'rgb( 92,   0,   0)', 'rgb(102,  61,   0)',
+	'rgb(102, 102,   0)', 'rgb(  0,  55,   0)', 'rgb(  0,  41, 102)',
+	'rgb( 61,  20,  10)'
 ].map(function(color){ return { value: color } });
 
 var defaultItems = [
@@ -28,9 +29,11 @@ var defaultItems = [
 			{ label:'Monospace',   value:'monospace' }
 		]},
 		{ label:'Size', type:'size', items: [
-			{ label:'Small',  value:'10px' },
-			{ label:'Normal', value:'13px', selected:true },
-			{ label:'Large',  value:'18px' },
+			{ label:'Smaller',  value:'10px' },
+			{ label:'Small', value:'13px'},
+			{ label:'Normal',  value:'18px', selected:true },
+			{ label:'Large',  value:'24px' },
+			{ label:'Larger',  value:'30px' },
 			{ label:'Huge',   value:'32px' }
 		]},
 		{ label:'Alignment', type:'align', items: [
